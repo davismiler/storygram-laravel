@@ -4,8 +4,8 @@
 
     <div class="flex min-h-full flex-col justify-center px-6 py-4 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <img class="mx-auto h-20 w-auto" src="{{ asset('storage/images/tinygramlogo.png') }}" alt="TinyGram">
-            <h2 class="mt-5 text-center text-2xl font-bold tracking-tight text-gray-900">TinyGram Login</h2>
+            <img class="mx-auto h-20 w-auto" src="{{ asset('storage/images/tinygramlogo.png') }}" alt="StoryGram">
+            <h2 class="mt-5 text-center text-2xl font-bold tracking-tight text-gray-900">StoryGram Login</h2>
         </div>
 
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">

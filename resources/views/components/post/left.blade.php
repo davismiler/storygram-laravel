@@ -4,7 +4,7 @@
         <div class="sm:w-60 min-h-screen w-14 pt-2 transition-all md:sticky md:top-0 ">
             <div class="text-center text-black p-4">
                 <a href="{{ route('home') }}"><img class="w-20" src="{{ asset('storage/images/tinygramlogo.png') }}"
-                        alt="tinygramLogo" /></a>
+                        alt="storygramLogo" /></a>
             </div>
             <ul class="mt-1">
                 <li

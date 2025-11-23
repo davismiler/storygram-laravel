@@ -4,7 +4,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        container_name: tinygram-app
+        container_name: storygram-app
         restart: unless-stopped
         working_dir: /var/www/html
         ports:
@@ -15,17 +15,17 @@ services:
         depends_on:
             - mysql_db
         networks:
-            - tinygram-net
+            - storygram-net
     mysql_db:
         image: mysql:latest
         restart: unless-stopped
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: tinygram
+            MYSQL_DATABASE: storygram
         ports:
             - 3306:3306
         networks:
-            - tinygram-net
+            - storygram-net
     phpmyadmin:
         image: phpmyadmin:latest
         ports:
@@ -33,8 +33,8 @@ services:
         environment:
             - PMA_ARBITRARY=1
         networks:
-            - tinygram-net
+            - storygram-net
 
 networks:
-    tinygram-net:
+    storygram-net:
         driver: bridge

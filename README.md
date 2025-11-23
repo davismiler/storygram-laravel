@@ -1,23 +1,19 @@
-# Project TinyGram
+# Project StoryGram
 
-Tinygram is a cutting-edge social media platform 😊 that brings the world of visual storytelling to life. Developed using the power of Laravel 10 🤗
-
-<p align="center">
-<img src="https://i.ibb.co/b1wwxxc/tinygram.png" width="100" alt="tinygram logo" title="TinyGram Logo">
-</p>
+StoryGram is a cutting-edge social media platform 😊 that brings the world of visual storytelling to life. Developed using the power of Laravel 10 🤗
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/developersharif/tinygram.git
+  git clone https://github.com/davismiler/storygram-laravel.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd tinygram
+  cd storygram-laravel
 ```
 
 Install dependencies
@@ -93,7 +89,7 @@ Start the socket server
 1.
 
 ```bash
-git clone https://github.com/developersharif/tinygram.git && cd tinygram && composer install && cp .env.example .env
+git clone https://github.com/davismiler/storygram-laravel.git && cd storygram-laravel && composer install && cp .env.example .env
 
 ```
 
@@ -126,13 +122,13 @@ https://labs.play-with-docker.com/
 Clone the project
 
 ```bash
-  git clone https://github.com/developersharif/tinygram.git
+  git clone https://github.com/davismiler/storygram-laravel.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd tinygram
+  cd storygram-laravel
 ```
 
 Build Docker Image
@@ -151,13 +147,13 @@ Docker Up
 Docker initial commands
 
 ```bash
-docker exec tinygram-app bash -c "cp .env.docker .env && composer install && php artisan key:generate && php artisan migrate && php artisan db:seed && npm install && npm run build && chmod -R a+rw storage/ && php artisan storage:link"
+docker exec storygram-app bash -c "cp .env.docker .env && composer install && php artisan key:generate && php artisan migrate && php artisan db:seed && npm install && npm run build && chmod -R a+rw storage/ && php artisan storage:link"
 ```
 
 Run websocket server
 
 ```bash
-docker exec tinygram-app bash -c "php artisan websockets:serve"
+docker exec storygram-app bash -c "php artisan websockets:serve"
 ```
 
 Open: http://localhost
@@ -169,7 +165,7 @@ Open: http://localhost
 ![App Notification](https://i.ibb.co/xztRYrp/2023-12-11-08-30-1.png)
 ## Demo Video.
 
-https://github.com/developersharif/tinygram/assets/54396379/57938efa-763d-4da1-93fc-374c9758324a
+https://github.com/davismiler/storygram-laravel/assets/54396379/57938efa-763d-4da1-93fc-374c9758324a
 
 
 ## Features
@@ -197,4 +193,4 @@ https://github.com/developersharif/tinygram/assets/54396379/57938efa-763d-4da1-9
 
 ## Authors
 
--   [@developersharif](https://www.github.com/developersharif)
+-   [@davismiler](https://www.github.com/davismiler)

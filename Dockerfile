@@ -27,6 +27,6 @@ RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 USER root
-# Copy the tinygram project files to the container
+# Copy the storygram project files to the container
 COPY . .
 EXPOSE 6001
